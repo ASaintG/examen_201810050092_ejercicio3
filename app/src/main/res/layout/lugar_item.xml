@@ -30,51 +30,67 @@
             <TextView
                 android:id="@+id/txtNombreLugar"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="23dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="10dp"
                 android:text="TextView"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/verLugar"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <TextView
                 android:id="@+id/txtdescripcion"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
+                android:layout_width="279dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="3dp"
                 android:text="TextView"
                 app:layout_constraintEnd_toStartOf="@+id/vermapa"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/txtNombreLugar"
                 app:layout_constraintTop_toBottomOf="@+id/txtNombreLugar" />
 
-
             <ImageView
                 android:id="@+id/verLugar"
-                android:layout_width="27dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="8dp"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
 
-                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/baseline_edit_location_24" />
 
             <ImageView
                 android:id="@+id/vermapa"
-                android:layout_width="27dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
 
-                android:layout_marginEnd="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="4dp"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/verLugar"
                 app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/baseline_remove_red_eye_24" />
+
+            <ImageView
+                android:id="@+id/compartir"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/vermapa"
+                app:srcCompat="@drawable/baseline_share_location_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

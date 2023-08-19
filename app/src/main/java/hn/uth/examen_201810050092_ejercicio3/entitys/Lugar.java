@@ -110,6 +110,10 @@ public class Lugar implements Serializable {
     public void setRetorno(int retorno) {
         this.retorno = retorno;
     }
+
+    public String toText(){
+        return this.lugar+","+ this.latitud+","+this.longitud;
+    }
 }
 
 

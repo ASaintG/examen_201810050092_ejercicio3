@@ -8,4 +8,5 @@
     <string name="lbl_nombre">Nombre</string>
     <string name="lbl_nombreevento">Nombre del evento</string>
     <string name="lbl_descripciondelevento">Descripcion del evento</string>
+    <string name="no_ubicacion">no cuenta con una ubicacion valida</string>
 </resources>

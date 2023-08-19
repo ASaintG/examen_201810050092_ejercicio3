@@ -1,5 +1,7 @@
 package hn.uth.examen_201810050092_ejercicio3.ui.home;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,8 +76,31 @@ public class HomeFragment extends Fragment implements OnItemClickListener<Lugar>
             Bundle bundle = new Bundle();
             bundle.putSerializable("lugar", data);
 
-            NavController navController = Navigation.findNavController(this.getActivity(), R.id.nav_host_fragment_activity_main);
-            navController.navigate(R.id.navigation_notifications, bundle);
+            if(data == null){
+                Snackbar.make(binding.clHome, R.string.no_ubicacion, Snackbar.LENGTH_LONG).show();
+            }else{
+                Intent contactIntent = new Intent(Intent.ACTION_PICK, android.provider.ContactsContract.Contacts.CONTENT_URI);
+                contactIntent.putExtra(Intent.EXTRA_TEXT, data.toText());
+
+                startActivity(contactIntent);
+                /*
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Mi ubicación Actual");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, data.toText());
+
+                startActivity(Intent.createChooser(shareIntent, "Compartir Texto"));*/
+            }
+        }else {
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("lugar", data);
+            if(data == null){
+                Snackbar.make(binding.clHome, R.string.no_ubicacion, Snackbar.LENGTH_LONG).show();
+            }else{
+                Uri mapLocation = Uri.parse("geo:"+data.toText()+"?z=14");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapLocation);
+                startActivity(mapIntent);
+            }
 
         }
 
