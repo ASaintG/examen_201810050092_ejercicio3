@@ -64,13 +64,22 @@ public class HomeFragment extends Fragment implements OnItemClickListener<Lugar>
 
     @Override
     public void onItemClick(Lugar data, int accion) {
-
+        if(accion == 0){
             Bundle bundle = new Bundle();
             bundle.putSerializable("lugar", data);
 
             NavController navController = Navigation.findNavController(this.getActivity(), R.id.nav_host_fragment_activity_main);
             navController.navigate(R.id.navigation_dashboard, bundle);
+        }else if(accion ==1) {
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("lugar", data);
 
+            NavController navController = Navigation.findNavController(this.getActivity(), R.id.nav_host_fragment_activity_main);
+            navController.navigate(R.id.navigation_notifications, bundle);
 
         }
+
+
+    }
+
     }

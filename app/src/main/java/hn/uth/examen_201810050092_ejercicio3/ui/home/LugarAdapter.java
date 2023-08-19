@@ -62,7 +62,7 @@ public class LugarAdapter extends RecyclerView.Adapter<LugarAdapter.ViewHolder> 
 
         public void  setOnClickListener(Lugar nombreLugar, OnItemClickListener<Lugar> clickListener){
             this.binding.verLugar.setOnClickListener(v -> clickListener.onItemClick(nombreLugar,0));
-
+            this.binding.vermapa.setOnClickListener(v -> clickListener.onItemClick(nombreLugar,1));
 
         }
 

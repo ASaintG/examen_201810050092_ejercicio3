@@ -6,4 +6,6 @@
     <string name="btn_crear_lugar">Guardar Lugar</string>
     <string name="btn_modificar_lugar">Modificar Lugar\n</string>
     <string name="lbl_nombre">Nombre</string>
+    <string name="lbl_nombreevento">Nombre del evento</string>
+    <string name="lbl_descripciondelevento">Descripcion del evento</string>
 </resources>
