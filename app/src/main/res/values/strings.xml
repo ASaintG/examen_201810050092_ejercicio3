@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ejercicio3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="btn_crear_lugar">Guardar Lugar</string>
+    <string name="btn_modificar_lugar">Modificar Lugar\n</string>
+    <string name="lbl_nombre">Nombre</string>
+</resources>
