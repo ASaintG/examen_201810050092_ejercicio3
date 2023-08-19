@@ -33,6 +33,8 @@ public class LugarAdapter extends RecyclerView.Adapter<LugarAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull LugarAdapter.ViewHolder holder, int position) {
         Lugar lugar = dataset.get(position);
         holder.binding.txtNombreLugar.setText(lugar.getLugar());
+        holder.binding.txtlongitud.setText(lugar.getLongitudeStr());
+        holder.binding.txtlatitud.setText(lugar.getLatitudeStr());
         holder.binding.txtdescripcion.setText(lugar.getDescripcion());
         holder.setOnClickListener(lugar,manejadorEventoClick);
 

@@ -39,16 +39,6 @@ public abstract class DBLugares extends RoomDatabase {
                                 LugarDAO testDao = INSTANCE.lugarDao();
                                 testDao.deleteAll();
 
-                                testDao.insert(new Lugar("San Pedro Sula","Valle",23.23,23.23,"Test San pedro",3));
-                                 testDao.insert(new Lugar("Villanueva","Valle",25.23,26.23,"Test Villanueva",3));
-                                 testDao.insert(new Lugar("Lago de Yojoa","Valle",25.23,26.23,"Test Lago",3));
-                                /**
-                                 ContactoDAO contactoDao = INSTANCE.contactoDAO();
-                                 contactoDao.deleteAll();
-                                 contactoDao.insert(new Contacto("Moises Torres","722435631","moises.torres@gmail.com","San Pedro Sula"));
-                                 contactoDao.insert(new Contacto("Alejandra Ayala","722435631","ale.torres@gmail.com","San Pedro Sula"));
-                                 contactoDao.insert(new Contacto("Moises Torres","722435631","moises.torres@gmail.com","San Pedro Sula"));
-                                 contactoDao.insert(new Contacto("Moises Torres","722435631","moises.torres@gmail.com","San Pedro Sula"));*/
 
 
 
