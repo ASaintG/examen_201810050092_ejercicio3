@@ -12,12 +12,12 @@
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:numStars="5"
         android:rating="0"
         android:stepSize="0.5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tildescripcion" />
 
@@ -39,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icno1" />
+        app:srcCompat="@mipmap/ic_launcher_iii" />
 
 
     <androidx.cardview.widget.CardView
@@ -120,7 +120,7 @@
         android:layout_width="171dp"
         android:layout_height="49dp"
         android:layout_marginTop="12dp"
-        android:hint="@string/lbl_nombre"
+        android:hint="@string/lbl_nombredelevento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +131,7 @@
         android:layout_width="184dp"
         android:layout_height="49dp"
         android:layout_marginTop="12dp"
-        android:hint="tipo"
+        android:hint="Tipo de evento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toEndOf="@+id/tilNombre"
@@ -152,7 +152,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="descripcion" />
+            android:hint="Descripcion sobre el evento" />
     </com.google.android.material.textfield.TextInputLayout>
 
 

@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">Ejercicio3</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Crear Un Lugar</string>
+    <string name="title_notifications">Crear Un Evento</string>
     <string name="btn_crear_lugar">Guardar Lugar</string>
     <string name="btn_modificar_lugar">Modificar Lugar\n</string>
     <string name="lbl_nombre">Nombre</string>
     <string name="lbl_nombreevento">Nombre del evento</string>
     <string name="lbl_descripciondelevento">Descripcion del evento</string>
     <string name="no_ubicacion">no cuenta con una ubicacion valida</string>
+    <string name="lbl_nombredelevento">Nombre del Evento</string>
 </resources>
